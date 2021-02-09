@@ -12602,6 +12602,8 @@ lapack_int LAPACKE_zhetrs_aa_2stage_work( int matrix_layout, char uplo, lapack_i
                                lapack_int ltb, lapack_int* ipiv, lapack_int* ipiv2,
                                lapack_complex_double* b, lapack_int ldb );
 
+#ifndef TARGET_OS_IOS
+
 #define LAPACK_sgetrf LAPACK_GLOBAL(sgetrf,SGETRF)
 #define LAPACK_dgetrf LAPACK_GLOBAL(dgetrf,DGETRF)
 #define LAPACK_cgetrf LAPACK_GLOBAL(cgetrf,CGETRF)
@@ -19444,6 +19446,8 @@ void LAPACK_zhetrs_aa_2stage( char* uplo, lapack_int* n, lapack_int* nrhs,
                    lapack_complex_double* b, lapack_int* ldb,
                    lapack_int *info );
                    
+#endif /* TARGET_OS_IOS */
+
 /* APIs for set/get nancheck flags */
 void LAPACKE_set_nancheck( int flag );
 int LAPACKE_get_nancheck( );
