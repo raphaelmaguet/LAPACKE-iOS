@@ -2443,11 +2443,7 @@ endif
 all: ../../$(LAPACKELIB)
 
 ../../$(LAPACKELIB): $(OBJ_A) $(OBJ_B) $(DEPRECATED) $(EXTENDED) $(MATGEN)
-	$(ARCH) $(ARCHFLAGS) $@ $(OBJ_A)
-	$(ARCH) $(ARCHFLAGS) $@ $(OBJ_B)
-	$(ARCH) $(ARCHFLAGS) $@ $(DEPRECATED)
-	$(ARCH) $(ARCHFLAGS) $@ $(EXTENDED)
-	$(ARCH) $(ARCHFLAGS) $@ $(MATGEN)
+	$(ARCH) $(ARCHFLAGS) $@ $^
 	$(RANLIB) $@
 
 clean: cleanobj
