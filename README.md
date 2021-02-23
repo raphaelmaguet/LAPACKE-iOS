@@ -1,3 +1,26 @@
+# LAPACKE-iOS
+
+LAPACKE compiled for iOS distributed as a Swift package
+
+## Swift Package Manager
+
+Add the following dependency to your `Package.swift` manifest:
+
+```swift
+.package(url: "https://github.com/kewlbear/LAPACKE-iOS.git", .branch("main")),
+```
+
+## Manual build
+
+```
+cd LAPACKE-iOS/LAPACKE
+sh iOS.sh
+```
+
+The following is original README.md from lapack-release
+
+---
+
 # LAPACK
 
 [![Build Status](https://travis-ci.org/Reference-LAPACK/lapack.svg?branch=master)](https://travis-ci.org/Reference-LAPACK/lapack)
