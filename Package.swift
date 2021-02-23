@@ -13,7 +13,7 @@ let package = Package(
             targets: ["LAPACKE", "Accelerate"]),
     ],
     targets: [
-        .binaryTarget(name: "LAPACKE", path: "LAPACKE.xcframework"),
+        .binaryTarget(name: "LAPACKE", path: "LAPACKE.xcframework.zip"),
         .target(
             name: "Accelerate",
             linkerSettings: [.linkedFramework("Accelerate")]),
