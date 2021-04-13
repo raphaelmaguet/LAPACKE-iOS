@@ -142,7 +142,7 @@ typedef lapack_logical (*LAPACK_Z_SELECT2)
 
 #include "lapacke_mangling.h"
 
-#define LAPACK_lsame LAPACK_GLOBAL(lsame,LSAME)
+#define LAPACK_lsame lsame_workaround
 lapack_logical LAPACK_lsame( char* ca,  char* cb,
                               lapack_int lca, lapack_int lcb );
 
