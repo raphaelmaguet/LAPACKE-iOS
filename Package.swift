@@ -13,7 +13,7 @@ let package = Package(
             targets: ["LAPACKE", "_LapackeLink"]),
     ],
     targets: [
-        .binaryTarget(name: "LAPACKE", url: "https://github.com/kewlbear/LAPACKE-iOS/releases/download/0.0.1-20210331/LAPACKE.xcframework.zip", checksum: "cd2f078c8213a5925a1c74b2f63212fe7a900bc87b08a4e4ccd1069520ac6959"),
+        .binaryTarget(name: "LAPACKE", url: "https://github.com/kewlbear/LAPACKE-iOS/releases/download/0.0.20210414/LAPACKE.xcframework.zip", checksum: "22911ba53822023c27eaa6925a197f0ef67da504c9915d39973752fe1f0a5b79"),
         .target(
             name: "_LapackeLink",
             linkerSettings: [.linkedFramework("Accelerate")]),
