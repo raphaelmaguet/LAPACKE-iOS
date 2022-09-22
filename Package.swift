@@ -12,9 +12,9 @@ let package = Package(
             name: "LAPACKE-iOS",
             targets: ["LAPACKE", "_LapackeLink"]),
     ],
-    dependencies: [.package(url: "https://github.com/kewlbear/BLAS-LAPACK-AppStore-Workaround.git", .branch("main"))],
+    dependencies: [.package(url: "https://github.com/raphaelmaguet/BLAS-LAPACK-AppStore-Workaround.git", .branch("main"))],
     targets: [
-        .binaryTarget(name: "LAPACKE", url: "https://github.com/kewlbear/LAPACKE-iOS/releases/download/0.0.20210414/LAPACKE.xcframework.zip", checksum: "22911ba53822023c27eaa6925a197f0ef67da504c9915d39973752fe1f0a5b79"),
+        .binaryTarget(name: "LAPACKE", url: "https://github.com/raphaelmaguet/LAPACKE-iOS/releases/download/0.0.20210414/LAPACKE.xcframework.zip", checksum: "22911ba53822023c27eaa6925a197f0ef67da504c9915d39973752fe1f0a5b79"),
         .target(
             name: "_LapackeLink",
             dependencies: ["BLAS-LAPACK-AppStore-Workaround"],
